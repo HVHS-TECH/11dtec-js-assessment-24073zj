@@ -1,0 +1,12 @@
+body{
+    font-family: sans-serif;
+}
+header{
+    background-color: rgb(230, 230, 230);
+}
+main{
+    background-color: lightgrey;
+}
+footer{
+    background-color: lightgrey;
+}
