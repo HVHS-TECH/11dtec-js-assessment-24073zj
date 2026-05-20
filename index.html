@@ -13,21 +13,25 @@
         <form>
             <h2>Burgers:</h2>
             <ul>
-                <li><input type="button" value="Cheeseburger"></li>
-                <li><input type="button" value="Double Cheeseburger"></li>
-                <li><input type="button" value="Chicken Burger"></li>
+                <li><input type="button" value="Cheeseburger" onclick="AddToCart('Cheeseburger')"></li>
+                <li><input type="button" value="Double Cheeseburger" onclick="AddToCart('Double Cheeseburger')"></li>
+                <li><input type="button" value="Chicken Burger" onclick="AddToCart('Chicken Burger')"></li>
             </ul>
             <h2>Sides:</h2>
             <ul>
-                <li><input type="button" value="Fries"></li>
+                <li><input type="button" value="Fries" onclick="AddToCart('Fries')"></li>
             </ul>
             <h2>Drinks:</h2>
             <ul>
-                <li><input type="button" value="Coke"></li>
-                <li><input type="button" value="Sprite"></li>
-                <li><input type="button" value="Fanta"></li>
+                <li><input type="button" value="Coke" onclick="AddToCart('Coke')"></li>
+                <li><input type="button" value="Sprite" onclick="AddToCart('Sprite')"></li>
+                <li><input type="button" value="Fanta" onclick="AddToCart('Fanta')"></li>
             </ul>
         </form>
+        <button onClick="Show()">Show</button>
+        <div id="devOutput">
+            placeholder abc
+        </div>
     </main>
     <footer>Not an actual restaurant. Copyright 2026. etc</footer>
     <script src="script.js"></script>
