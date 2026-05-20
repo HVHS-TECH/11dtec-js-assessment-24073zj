@@ -23,7 +23,8 @@ function AddToCart(_item){
 }
 function Show()
 {
-    for(let i = 0; i < cart.length(); i++){
-        OUTPUT.innerHTML = i + ":" + cart[i] + "<br>";
+    OUTPUT.innerHTML = " ";
+    for(let i = 0; i < cart.length; i++){
+        OUTPUT.innerHTML += i + ":" + cart[i] + "<br>";
     }
 }
