@@ -1,8 +1,9 @@
 console.log("Welcome to the shop!")
 
-var user = {
-    name
-}
+const user = {
+    name: " ",
+    money: ""
+};
 
 function AddToCart(_item){
 
