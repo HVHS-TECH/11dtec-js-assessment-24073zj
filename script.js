@@ -66,9 +66,9 @@ function MenuShow()
 function CalculateCost(){
     var localPrice = 0;
     for(let i = 0; i < cart.length; i++){
-        let thisItem = menuItems.find(item => item.name === cart[i]);
+        let thisItem = menuItems.find(item => item.name === cart[0]);
         localPrice += thisItem.price;
-        console.log("a" + localPrice);
+        console.log("a" + localPrice + cart[0] + thisItem.price);
     }
     user.orderPrice = localPrice;
     console.log("a" + localPrice);
