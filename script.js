@@ -28,6 +28,6 @@ function Show()
         OUTPUT.innerHTML = "There is nothing in your cart";
     }
     for(let i = 0; i < cart.length; i++){
-        OUTPUT.innerHTML += i + ":" + cart[i] + "<br>";
+        OUTPUT.innerHTML += i + ": " + cart[i] + "<br>";
     }
 }
