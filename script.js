@@ -6,7 +6,7 @@ const COST_LABEL = document.getElementById("costLabel");
 
 var cart = [];
 
-var menuItems = [
+const menuItems = [
     {
     name: "Cheeseburger",
     price: 5
@@ -14,10 +14,34 @@ var menuItems = [
     {
     name: "Double Cheeseburger",
     price: 7
+    },
+    {
+    name: "Chicken Burger",
+    price: 5
+    },
+    {
+    name: "Fries",
+    price: 5
+    },
+    {
+    name: "Coke",
+    price: 5
+    },
+    {
+    name: "Sprite",
+    price: 5
+    },
+    {
+    name: "Fanta",
+    price: 5
+    },
+    {
+    name: "Chocolate Sundae",
+    price: 5
     }
 ];
 
-const user = {
+var user = {
     name: "",
     orderPrice: 0,
     moneyEntered: 0
@@ -42,11 +66,15 @@ function MenuShow()
 function CalculateCost(){
     let localPrice = 0;
     for(let i = 0; i < cart.length; i++){
-        menuItems.find(u => u.name === 'foo');
+        let thisItem = menuItems.find(item => item.name === cart[i]);
+        localPrice += thisItem.price;
+        console.log(localPrice);
     }
+    user.orderPrice = localPrice;
 }
 
 function OrderShow()
 {
-    COST_LABEL.innerHTML = "Your order will cost " + " dollars.<br>";
+    CalculateCost();
+    COST_LABEL.innerHTML = "Your order will cost " + user.orderPrice + " dollars.<br>";
 }
