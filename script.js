@@ -47,7 +47,6 @@ var user = {
     moneyEntered: 0
 };
 
-//----- Menu page -----//
 function AddToCart(_item){
     cart.push(_item);
 }
@@ -62,21 +61,5 @@ function MenuShow()
     }
 }
 
-//----- Order page -----//
-function CalculateCost(){
-    var localPrice = 0;
-    for(let i = 0; i < cart.length; i++){
-        let thisItem = menuItems.find(item => item.name === cart[0]);
-        localPrice += thisItem.price;
-        console.log("a" + localPrice + cart[0] + thisItem.price);
-    }
-    user.orderPrice = localPrice;
-    console.log("a" + localPrice);
-}
+sessionStorage.setItem('userData', user);
 
-function OrderShow()
-{
-    OUTPUT.innerHTML = "this ran"
-    CalculateCost();
-    COST_LABEL.innerHTML = "Your order will cost " + user.orderPrice + " dollars.<br>";
-}
