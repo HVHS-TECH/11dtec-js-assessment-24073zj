@@ -42,7 +42,7 @@ function MenuShow()
 function CalculateCost(){
     let localPrice = 0;
     for(let i = 0; i < cart.length; i++){
-        cart[i]
+        menuItems.find(u => u.name === 'foo');
     }
 }
 
