@@ -64,17 +64,19 @@ function MenuShow()
 
 //----- Order page -----//
 function CalculateCost(){
-    let localPrice = 0;
+    var localPrice = 0;
     for(let i = 0; i < cart.length; i++){
         let thisItem = menuItems.find(item => item.name === cart[i]);
         localPrice += thisItem.price;
-        console.log(localPrice);
+        console.log("a" + localPrice);
     }
     user.orderPrice = localPrice;
+    console.log("a" + localPrice);
 }
 
 function OrderShow()
 {
+    OUTPUT.innerHTML = "this ran"
     CalculateCost();
     COST_LABEL.innerHTML = "Your order will cost " + user.orderPrice + " dollars.<br>";
 }
