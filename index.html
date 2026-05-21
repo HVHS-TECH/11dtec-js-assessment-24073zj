@@ -8,6 +8,10 @@
     <header>
         <h2>Zac's Burger Place</h2>
     </header>
+    <nav>
+        <button style="background-color: lightgrey;">Menu</button>
+        <button onClick="window.location.href='order.html'">Order</button>
+    </nav>
     <main>
         <h1>Menu</h1>
         <form id="menuForm">
@@ -33,7 +37,7 @@
                 <li><input type="button" value="Soft Serve" onclick="AddToCart('Soft Serve')"></li>
             </ul>
         </form>
-        <button onClick="Show()">Show</button>
+        <button onClick="MenuShow()">Show</button>
         <div id="devOutput">
             placeholder abc
         </div>

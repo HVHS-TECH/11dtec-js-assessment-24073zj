@@ -10,6 +10,16 @@ header{
 header > h2{
     margin-left: 2px;
 }
+nav{
+    background-color: #E6E6E6;
+    padding: 2px;
+    margin: 2px;
+}
+nav > button{
+    background-color: white;
+    padding: 5px;
+    width: 100px;
+}
 main{
     background-color: #E6E6E6;
     padding: 2px;
