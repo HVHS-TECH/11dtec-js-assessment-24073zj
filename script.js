@@ -19,6 +19,7 @@ var menuItems = [
 
 const user = {
     name: "",
+    orderPrice: 0,
     moneyEntered: 0
 };
 
@@ -38,7 +39,14 @@ function MenuShow()
 }
 
 //----- Order page -----//
+function CalculateCost(){
+    let localPrice = 0;
+    for(let i = 0; i < cart.length; i++){
+        cart[i]
+    }
+}
+
 function OrderShow()
 {
-    OUTPUT.innerHTML = " ";
+    COST_LABEL.innerHTML = "Your order will cost " + " dollars.<br>";
 }
