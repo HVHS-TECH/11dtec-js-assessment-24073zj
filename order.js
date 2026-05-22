@@ -27,8 +27,11 @@ function CalculateCost(){
         console.log("a" + localPrice + cart[0] + thisItem.price);
     }*/
     for(let i = 0; i < cart.length; i++){
-        let thisItem = menuItems.find(item => item.name == cart[0]);
-        localPrice += thisItem.price
+        var foundItem = menuItems.find(item => item.name === cart[0]);
+        if (foundItem) {
+            let thisItem = menuItems.find(item => item.name == cart[0]);
+            localPrice += thisItem.price
+        }
     }
     orderPrice = localPrice;
 }
