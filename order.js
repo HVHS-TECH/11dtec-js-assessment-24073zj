@@ -21,11 +21,11 @@ function CalculateCost(){
     var localPrice = 0;
 
     for(let i = 0; i < cart.length; i++){
-        
-            
-            localPrice += thisItem.price
+        var thisItem = menuItems.filter(item => item.name === "Cheeseburger");
+        localPrice += thisItem[0]["price"];
         
     }
+    
     orderPrice = localPrice;
 }
 
