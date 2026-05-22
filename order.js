@@ -11,7 +11,8 @@ const menuItems = [
     { name: "Coke", price: 5 },
     { name: "Sprite", price: 5 },
     { name: "Fanta", price: 5 },
-    { name: "Chocolate Sundae", price: 5 }
+    { name: "Chocolate Sundae", price: 5 },
+    { name: "Soft Serve", price: 5 }
 ];
 
 var orderPrice = 0;
@@ -26,7 +27,7 @@ function CalculateCost(){
         console.log("a" + localPrice + cart[0] + thisItem.price);
     }*/
     for(let i = 0; i < cart.length; i++){
-        if(menuItems.find(item => item.name === cart[i])){
+        if(menuItems.find(item => item.name === cart[i]) != undefined){
             let thisItem = menuItems.find(item => item.name === cart[i]);
             localPrice = thisItem.price;
         }else{
