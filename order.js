@@ -29,7 +29,9 @@ function CalculateCost(){
         if(menuItems.find(item => item.name === cart[i])){
             let thisItem = menuItems.find(item => item.name === cart[i]);
             localPrice = thisItem.price;
-        }   
+        }else{
+            console.log("couldnt find cart item");
+        }
     }
     orderPrice = localPrice;
 }
