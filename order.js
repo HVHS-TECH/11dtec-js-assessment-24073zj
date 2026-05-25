@@ -3,7 +3,7 @@ var cart = [
     // "Fries"
 ];
 
-cart = sessionStorage.getItem('cartData');
+cart = JSON.parse(sessionStorage.getItem('cartData');
 
 const OUTPUT = document.getElementById("devOutput");
 const COST_LABEL = document.getElementById("costLabel");
