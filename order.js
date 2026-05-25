@@ -1,9 +1,9 @@
 var cart = [
-    "Cheeseburger",
-    "Fries"
+    // "Cheeseburger",
+    // "Fries"
 ];
 
-// cart = sessionStorage.getItem('cartData');
+cart = sessionStorage.getItem('cartData');
 
 const OUTPUT = document.getElementById("devOutput");
 const COST_LABEL = document.getElementById("costLabel");
@@ -26,13 +26,16 @@ function CalculateCost(){
     var localPrice = 0;
 
     for (const itemName of cart) {
-        console.log("name: " + itemName);
         
-        //var thisItem = menuItems.filter(item => item.name === "Cheeseburger");
-        thisItem = menuItems[0];
+
+        var thisItem;
+        //thisItem = menuItems.filter(item => item.name === "Cheeseburger");
+        //thisItem = menuItems[0];
+        thisItem = menuItems.find(i => i.name === itemName);
+
         //localPrice += thisItem[0]["price"];
         localPrice += thisItem["price"];
-        console.log(thisItem["price"]);
+        console.log("Name: " + itemName + "; Price: " + thisItem["price"]);
     }
     
     orderPrice = localPrice;
