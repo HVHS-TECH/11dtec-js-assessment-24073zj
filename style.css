@@ -41,6 +41,10 @@ main > button:active, input:active{
 li{
     margin: 2px;
 }
+#receipt{
+    background-color: white;
+    width: 200px;
+}
 footer{
     background-color: #E6E6E6;
     padding: 2px;
