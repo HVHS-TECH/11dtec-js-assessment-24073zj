@@ -1,4 +1,5 @@
-var cart = sessionStorage.getItem('cartData');
+var cart = [];
+cart = sessionStorage.getItem('cartData');
 
 const OUTPUT = document.getElementById("devOutput");
 const COST_LABEL = document.getElementById("costLabel");
