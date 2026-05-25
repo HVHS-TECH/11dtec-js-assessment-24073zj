@@ -35,7 +35,7 @@ main > button, input{
 main > button:hover, input:hover{
     background-color: #e0e0e0;
 }
-main > button:hover, input:hover{
+main > button:active, input:active{
     background-color: #cacaca;
 }
 li{
