@@ -21,7 +21,8 @@ function CalculateCost(){
     var localPrice = 0;
 
     for(let i = 0; i < cart.length; i++){
-        var thisItem = menuItems.filter(item => item.name === "Cheeseburger");
+        //var thisItem = menuItems.filter(item => item.name === "Cheeseburger");
+        thisItem = menuItems[0]
         localPrice += thisItem[0]["price"];
         
     }
