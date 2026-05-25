@@ -20,13 +20,17 @@ var orderPrice = 0;
 function CalculateCost(){
     var localPrice = 0;
 
-    for(let i = 0; i < cart.length; i++){
-        //var thisItem = menuItems.filter(item => item.name === "Cheeseburger");
-        thisItem = menuItems[0];
-        //localPrice += thisItem[0]["price"];
-        localPrice += thisItem["price"];
-        console.log(thisItem["price"]);
+    for (const item of cart) {
+        console.log("name: " + item["name"] + "price: " + item["price"]);
     }
+
+    // for(let i = 0; i < cart.length; i++){
+    //     //var thisItem = menuItems.filter(item => item.name === "Cheeseburger");
+    //     thisItem = menuItems[0];
+    //     //localPrice += thisItem[0]["price"];
+    //     localPrice += thisItem["price"];
+    //     console.log(thisItem["price"]);
+    // }
     
     orderPrice = localPrice;
 }
