@@ -24,7 +24,8 @@ function CalculateCost(){
         //var thisItem = menuItems.filter(item => item.name === "Cheeseburger");
         thisItem = menuItems[0];
         //localPrice += thisItem[0]["price"];
-        localPrice += thisItem[1];
+        localPrice += thisItem["price"];
+        console.log(thisItem["price"]);
     }
     
     orderPrice = localPrice;
