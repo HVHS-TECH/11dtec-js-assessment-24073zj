@@ -22,9 +22,9 @@ function CalculateCost(){
 
     for(let i = 0; i < cart.length; i++){
         //var thisItem = menuItems.filter(item => item.name === "Cheeseburger");
-        thisItem = menuItems[0]
+        thisItem = menuItems[0];
         //localPrice += thisItem[0]["price"];
-        localPrice += thisItem[0]["price"];
+        localPrice += thisItem[1];
     }
     
     orderPrice = localPrice;
