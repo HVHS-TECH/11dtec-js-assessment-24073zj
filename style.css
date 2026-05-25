@@ -32,6 +32,12 @@ main > button, input{
     background-color: #EEEEEE;
     padding: 5px;
 }
+main > button:hover, input:hover{
+    background-color: #e0e0e0;
+}
+main > button:hover, input:hover{
+    background-color: #cacaca;
+}
 li{
     margin: 2px;
 }
