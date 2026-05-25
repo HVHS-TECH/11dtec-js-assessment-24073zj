@@ -1,5 +1,9 @@
-var cart = [];
-cart = sessionStorage.getItem('cartData');
+var cart = [
+    "Cheeseburger",
+    "Fries"
+];
+
+// cart = sessionStorage.getItem('cartData');
 
 const OUTPUT = document.getElementById("devOutput");
 const COST_LABEL = document.getElementById("costLabel");
@@ -21,17 +25,15 @@ var orderPrice = 0;
 function CalculateCost(){
     var localPrice = 0;
 
-    for (const item of cart) {
-        console.log("name: " + item["name"] + "price: " + item["price"]);
+    for (const itemName of cart) {
+        console.log("name: " + itemName);
+        
+        //var thisItem = menuItems.filter(item => item.name === "Cheeseburger");
+        thisItem = menuItems[0];
+        //localPrice += thisItem[0]["price"];
+        localPrice += thisItem["price"];
+        console.log(thisItem["price"]);
     }
-
-    // for(let i = 0; i < cart.length; i++){
-    //     //var thisItem = menuItems.filter(item => item.name === "Cheeseburger");
-    //     thisItem = menuItems[0];
-    //     //localPrice += thisItem[0]["price"];
-    //     localPrice += thisItem["price"];
-    //     console.log(thisItem["price"]);
-    // }
     
     orderPrice = localPrice;
 }
