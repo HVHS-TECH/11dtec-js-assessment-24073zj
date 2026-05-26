@@ -26,5 +26,10 @@ function MenuShow()
     sessionStorage.setItem("cartData", JSON.stringify(cart));
 }
 
+function NextPage(){
+    MenuShow();
+    window.location.href="order.html";
+}
+
 
 
