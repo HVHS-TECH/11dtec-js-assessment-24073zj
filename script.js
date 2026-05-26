@@ -30,9 +30,7 @@ function MenuShow()
 
 function NextPage(){
     let returnValue = MenuShow();
-    if(returnValue == 1){
-        break;
-    }else{
+    if(returnValue != 1){
         window.location.href="order.html";
     }
 }
