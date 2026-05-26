@@ -44,6 +44,7 @@ li{
 #receipt{
     background-color: white;
     width: 400px;
+    mask: repeating-conic-gradient(from 135deg at 50% 30px,#0000 0,#000 1deg 89deg,#0000 90deg 180deg) 50% -30px/60px
 }
 footer{
     background-color: #E6E6E6;
