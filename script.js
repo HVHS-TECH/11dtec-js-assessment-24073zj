@@ -19,16 +19,22 @@ function MenuShow()
     OUTPUT.innerHTML = "Your order:<br>";
     if(cart[0] == undefined){
         OUTPUT.innerHTML = "There is nothing in your cart";
+        return 1;
     }
     for(let i = 0; i < cart.length; i++){
         OUTPUT.innerHTML += i + ": " + cart[i] + "<br>";
     }
     sessionStorage.setItem("cartData", JSON.stringify(cart));
+    return 0;
 }
 
 function NextPage(){
-    MenuShow();
-    window.location.href="order.html";
+    let returnValue = MenuShow();
+    if(returnValue == 1){
+        break;
+    }else{
+        window.location.href="order.html";
+    }
 }
 
 
