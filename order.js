@@ -1,7 +1,7 @@
 var cart = JSON.parse(sessionStorage.getItem("cartData"));
 
-const OUTPUT = document.getElementById("devOutput");
 const COST_LABEL = document.getElementById("costLabel");
+const RECEIPT = document.getElementById("receipt");
 
 const menuItems = [
     { name: "Cheeseburger", price: 5 },
@@ -33,5 +33,14 @@ function CalculateCost(){
 function OrderShow()
 {
     CalculateCost();
-    COST_LABEL.innerHTML = "Your order will cost " + orderPrice + " dollars.<br>";
+    RECEIPT.innerHTML = "Your order will cost " + orderPrice + " dollars.<br><br>";
+    RECEIPT.innerHTML += "Name: " + "Zac" + "<br><br>";
+    RECEIPT.innerHTML += "Your items: " + "<br>";
+    for (const item of cart)
+    {
+        RECEIPT.innerHTML += item + "<br>";
+    }
+    RECEIPT.innerHTML += "Total cost: $" + orderPrice + "<br><br>";
+    RECEIPT.innerHTML += "Money given: $" + orderPrice + "<br><br>";
+    RECEIPT.innerHTML += "Your change: $" + 0 + "<br>";
 }
