@@ -29,7 +29,7 @@ main{
     padding: 2px;
     margin: 2px;
 }
-main > button, input{
+main > button, .menuBox{
     background-color: #EEEEEE;
     padding: 5px;
 }
