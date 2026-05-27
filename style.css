@@ -50,6 +50,10 @@ li{
     mask: repeating-conic-gradient(from 135deg at 50% 10px,#0000 0,#000 1deg 89deg,#0000 90deg 180deg) 50% -10px/20px;
     mask-position: 0.5px -10px;
 }
+#doneButton{
+    background-color: lightgreen;
+    
+}
 footer{
     background-color: #E6E6E6;
     padding: 2px;
