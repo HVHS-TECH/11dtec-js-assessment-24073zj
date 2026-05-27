@@ -33,11 +33,18 @@ main > button, .menuBox{
     background-color: #EEEEEE;
     padding: 5px;
 }
-main > button:hover, input:hover{
+main > button:hover, .menuBox:hover{
     background-color: #e0e0e0;
 }
-main > button:active, input:active{
+main > button:active, .menuBox:active{
     background-color: #cacaca;
+}
+.menuBox{
+    width: 210px;
+    text-align: center;
+}
+.menuBox > img{
+    width: 200px;
 }
 li{
     margin: 2px;

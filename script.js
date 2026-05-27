@@ -13,6 +13,7 @@ var user = {
 
 function AddToCart(_item){
     cart.push(_item);
+    MenuShow();
 }
 function MenuShow()
 {
