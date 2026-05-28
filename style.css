@@ -46,6 +46,9 @@ main > button:active, .menuBox:active{
 .menuBox > img{
     width: 200px;
 }
+.menuSection{
+    display: flex;
+}
 li{
     margin: 2px;
 }

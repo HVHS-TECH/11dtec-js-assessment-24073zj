@@ -16,13 +16,11 @@
         <h1>Menu</h1>
         <form id="menuForm">
             <h2>Burgers:</h2>
-            <ul>
-                <li>
+            <div class="menuSection">
                     <div class="menuBox" onclick="AddToCart('Cheeseburger')">
                         <label>Cheeseburger</label><br>
                         <img src='https://t4.ftcdn.net/jpg/05/42/03/95/360_F_542039547_HWxq6bCIDHoH5BiQNyPwC2Kp4NBQL2qL.jpg'>
                     </div>
-                </li>
                 <div class="menuBox" onclick="AddToCart('Double Cheeseburger')">
                     <label>Double Cheeseburger</label><br>
                     <img src='https://t3.ftcdn.net/jpg/14/24/95/72/360_F_1424957282_GrlXCov5q0g9TwDgOnV1QwcAfVpd3CIX.jpg'>
@@ -31,11 +29,15 @@
                     <label>Chicken Burger</label><br>
                     <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQub2-Jy3lAShn7oYzBHpbKDSm_Yd2fApKWZw&s'>
                 </div>
-            </ul>
+            </div>
             <h2>Sides:</h2>
-            <ul>
+            <div class="menuSection">
+                    <div class="menuBox" onclick="AddToCart('Cheeseburger')">
+                        <label>Cheeseburger</label><br>
+                        <img src='https://t4.ftcdn.net/jpg/05/42/03/95/360_F_542039547_HWxq6bCIDHoH5BiQNyPwC2Kp4NBQL2qL.jpg'>
+                    </div>
                 <li><input type="button" value="Fries" onclick="AddToCart('Fries')"></li>
-            </ul>
+            </div>
             <h2>Drinks:</h2>
             <ul>
                 <li><input type="button" value="Coke" onclick="AddToCart('Coke')"></li>
