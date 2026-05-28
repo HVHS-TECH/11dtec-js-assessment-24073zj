@@ -40,7 +40,7 @@ function OrderShow()
     {
         RECEIPT.innerHTML += item + "<br>";
     }
-    RECEIPT.innerHTML += "Total cost: $" + orderPrice + "<br><br>";
+    RECEIPT.innerHTML += "<br>Total cost: $" + orderPrice + "<br><br>";
     RECEIPT.innerHTML += "Money given: $" + orderPrice + "<br><br>";
     RECEIPT.innerHTML += "Your change: $" + 0 + "<br>";
 }
