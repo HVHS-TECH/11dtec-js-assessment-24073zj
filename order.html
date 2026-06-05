@@ -15,13 +15,13 @@
     <main>
         <h1>Your Order</h1>
         
-        <form id="orderForm">
+        <form id="orderForm" onsubmit="return false;">
             <label id="costLabel">placeholder</label>
             <br>
             <label>How much money do you want to input?</label>
-            <button onsubmit="" onclick="AutoFill();">Auto</button>
             <br>
             <input id="moneyInput" type="text">
+            <button  onclick="AutoFill();">Auto</button>
         </form>
         <br>
         <button onclick="OrderShow()">Show</button>
