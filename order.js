@@ -25,6 +25,10 @@ function ShowCost(){
     COST_LABEL.innerHTML = "Your order will cost " + orderPrice + " dollars.<br>";
 }
 
+function AutoFill(){
+    MONEY_INPUT.value = orderPrice;
+}
+
 function CalculateCost(){
     var localPrice = 0;
 
