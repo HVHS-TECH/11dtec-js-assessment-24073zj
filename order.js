@@ -17,6 +17,11 @@ const menuItems = [
 
 var orderPrice = 0;
 
+function ShowCost(){
+    CalculateCost();
+    COST_LABEL.innerHTML = "Your order will cost " + orderPrice + " dollars.<br><br>";
+}
+
 function CalculateCost(){
     var localPrice = 0;
 
@@ -32,8 +37,7 @@ function CalculateCost(){
 
 function OrderShow()
 {
-    CalculateCost();
-    RECEIPT.innerHTML = "Your order will cost " + orderPrice + " dollars.<br><br>";
+    RECEIPT.innerHTML = ""
     RECEIPT.innerHTML += "Name: " + "Zac" + "<br><br>";
     RECEIPT.innerHTML += "Your items: " + "<br>";
     for (const item of cart)
@@ -44,3 +48,5 @@ function OrderShow()
     RECEIPT.innerHTML += "Money given: $" + orderPrice + "<br><br>";
     RECEIPT.innerHTML += "Your change: $" + 0 + "<br>";
 }
+
+ShowCost();
