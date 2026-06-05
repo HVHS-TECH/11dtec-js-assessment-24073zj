@@ -1,5 +1,7 @@
 var cart = JSON.parse(sessionStorage.getItem("cartData"));
 
+const MONEY_INPUT = document.getElementById("moneyInput");
+
 const COST_LABEL = document.getElementById("costLabel");
 const RECEIPT = document.getElementById("receipt");
 
