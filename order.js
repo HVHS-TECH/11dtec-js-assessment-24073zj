@@ -50,9 +50,11 @@ function OrderShow()
         {
             RECEIPT.innerHTML += item + "<br>";
         }
+
+        let change = usermoney - orderPrice;
         RECEIPT.innerHTML += "<br>Total cost: $" + orderPrice + "<br><br>";
         RECEIPT.innerHTML += "Money given: $" + usermoney + "<br><br>";
-        RECEIPT.innerHTML += "Your change: $" + Number(usermoney - orderprice) + "<br>";
+        RECEIPT.innerHTML += "Your change: $" + change + "<br>";
     }
 }
 
