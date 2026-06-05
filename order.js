@@ -32,7 +32,7 @@ function CalculateCost(){
         var thisItem = menuItems.find(i => i.name === itemName);
 
         localPrice += thisItem["price"];
-        console.log("Name: " + itemName + "; Price: " + thisItem["price"]);
+        //console.log("Name: " + itemName + "; Price: " + thisItem["price"]);
     }
     
     orderPrice = localPrice;
