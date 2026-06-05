@@ -1,5 +1,6 @@
 var cart = JSON.parse(sessionStorage.getItem("cartData"));
 
+const NAME_INPUT = document.getElementById("nameInput");
 const MONEY_INPUT = document.getElementById("moneyInput");
 
 const COST_LABEL = document.getElementById("costLabel");
@@ -48,7 +49,7 @@ function OrderShow()
     if(usermoney >= orderPrice){
         RECEIPT.hidden = false;
         RECEIPT.innerHTML = ""
-        RECEIPT.innerHTML += "Name: " + "Zac" + "<br><br>";
+        RECEIPT.innerHTML += "Name: " + NAME_INPUT.value + "<br><br>";
         RECEIPT.innerHTML += "Your items: " + "<br>";
         for (const item of cart)
         {
