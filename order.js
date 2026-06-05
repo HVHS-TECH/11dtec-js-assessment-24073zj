@@ -20,6 +20,7 @@ const menuItems = [
 var orderPrice = 0;
 
 function ShowCost(){
+    RECEIPT.hidden = true;
     CalculateCost();
     COST_LABEL.innerHTML = "Your order will cost " + orderPrice + " dollars.<br>";
 }
@@ -39,16 +40,20 @@ function CalculateCost(){
 
 function OrderShow()
 {
-    RECEIPT.innerHTML = ""
-    RECEIPT.innerHTML += "Name: " + "Zac" + "<br><br>";
-    RECEIPT.innerHTML += "Your items: " + "<br>";
-    for (const item of cart)
-    {
-        RECEIPT.innerHTML += item + "<br>";
+    var usermoney = Number(MONEY_INPUT.value);
+    if(usermoney >= orderPrice){
+        RECEIPT.hidden = false;
+        RECEIPT.innerHTML = ""
+        RECEIPT.innerHTML += "Name: " + "Zac" + "<br><br>";
+        RECEIPT.innerHTML += "Your items: " + "<br>";
+        for (const item of cart)
+        {
+            RECEIPT.innerHTML += item + "<br>";
+        }
+        RECEIPT.innerHTML += "<br>Total cost: $" + orderPrice + "<br><br>";
+        RECEIPT.innerHTML += "Money given: $" + usermoney + "<br><br>";
+        RECEIPT.innerHTML += "Your change: $" + Number(usermoney - orderprice) + "<br>";
     }
-    RECEIPT.innerHTML += "<br>Total cost: $" + orderPrice + "<br><br>";
-    RECEIPT.innerHTML += "Money given: $" + orderPrice + "<br><br>";
-    RECEIPT.innerHTML += "Your change: $" + 0 + "<br>";
 }
 
 ShowCost();
