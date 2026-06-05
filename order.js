@@ -21,7 +21,7 @@ var orderPrice = 0;
 
 function ShowCost(){
     CalculateCost();
-    COST_LABEL.innerHTML = "Your order will cost " + orderPrice + " dollars.<br><br>";
+    COST_LABEL.innerHTML = "Your order will cost " + orderPrice + " dollars.<br>";
 }
 
 function CalculateCost(){
