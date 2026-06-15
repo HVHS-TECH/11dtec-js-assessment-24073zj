@@ -7,7 +7,7 @@ const COST_LABEL = document.getElementById("costLabel");
 const RECEIPT = document.getElementById("receipt");
 
 const menuItems = [
-    { name: "Cheeseburger", price: 5 },
+    { name: "", price: 5 },
     { name: "Double Cheeseburger", price: 7 },
     { name: "Chicken Burger", price: 6 },
     { name: "Fries", price: 3 },
