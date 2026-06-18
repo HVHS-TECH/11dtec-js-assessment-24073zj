@@ -7,15 +7,13 @@ const COST_LABEL = document.getElementById("costLabel");
 const RECEIPT = document.getElementById("receipt");
 
 const menuItems = [
-    { name: "", price: 5 },
-    { name: "Double Cheeseburger", price: 7 },
-    { name: "Chicken Burger", price: 6 },
+    { name: "Pepperoni Pizza", price: 7 },
+    { name: "Cheese Pizza", price: 6 },
+    { name: "Hawaiian Pizza", price: 7 },
     { name: "Fries", price: 3 },
     { name: "Coke", price: 3.5 },
     { name: "Sprite", price: 3.5 },
-    { name: "Fanta", price: 3.5 },
-    { name: "Chocolate Sundae", price: 5 },
-    { name: "Soft Serve", price: 3 }
+    { name: "Fanta", price: 3.5 }
 ];
 
 var orderPrice = 0;
@@ -37,7 +35,6 @@ function CalculateCost(){
         var thisItem = menuItems.find(i => i.name === itemName);
 
         localPrice += thisItem["price"];
-        //console.log("Name: " + itemName + "; Price: " + thisItem["price"]);
     }
     
     orderPrice = localPrice;
