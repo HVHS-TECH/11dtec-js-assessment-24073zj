@@ -78,6 +78,7 @@ footer{
 }
 .home-section{
     display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr;
 }
 .home-section > img{
     width: 500px
