@@ -77,9 +77,5 @@ footer{
     margin: 2px;
 }
 .home-section{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-.home-section > p{
-    grid-row: 1 span 2;
+    
 }
