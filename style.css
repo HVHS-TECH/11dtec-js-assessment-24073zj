@@ -78,8 +78,12 @@ footer{
 }
 .home-section{
     display: grid;
-    grid-template-columns: 1fr, 1fr, 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.home-section > p{
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 .home-section > img{
-    width: 500px
+    width: auto;
 }
