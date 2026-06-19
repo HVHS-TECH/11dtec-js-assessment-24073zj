@@ -77,5 +77,8 @@ footer{
     margin: 2px;
 }
 .home-section{
-    
+    display: grid;
+}
+.home-section > img{
+    width: 500px
 }
