@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zac's Pizza Restaurant | Sign in</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="font-family: sans-serif;">
+    <header>
+        <h2>Zac's Pizza Restaurant</h2>
+    </header>
+    <nav>
+        <button onClick="window.location.href='index.html'">Home</button>
+        <button onClick="window.location.href='menu.html'">Menu</button>
+        <button onClick="window.location.href='order.html'">Order</button>
+        <button style="background-color: lightgrey;">Sign in</button>
+    </nav>
+    <main>
+        <h1>Sign in as admin</h1>
+        
+        <form id="signinForm" onsubmit="return false;">
+            <label>Password:</label>
+            <input id="passwordInput" type="text">
+        </form>
+        <button onclick="EnterPassword()">Enter</button>
+        <br>
+    </main>
+    <footer>Not an actual restaurant. Copyright 2026. etc</footer>
+    <script src="order.js"></script>
+</body>
+</html>

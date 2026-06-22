@@ -76,13 +76,24 @@ footer{
     padding: 2px;
     margin: 2px;
 }
-.home-section{
+.home-section, .home-section2{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    border: 1px solid black;
 }
 .home-section > p{
-    
+    grid-column: 2 / span 2;
 }
 .home-section > img{
-    width: 500px;
+    width: auto;
+    height: 400px;
+    object-fit: cover;
+}
+.home-section2 > p{
+    grid-column: 1 / span 2;
+}
+.home-section2 > img{
+    width: auto;
+    height: 400px;
+    object-fit: cover;
 }
