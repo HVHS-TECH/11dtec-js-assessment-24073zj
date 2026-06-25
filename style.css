@@ -1,12 +1,12 @@
 body{
     font-family: Verdana, sans-serif;
-    background-color:red;
+    background-color: #b80b0b;
 }
 p, li > input, button{
     font-size: 15pt;
 }
 header{
-    background-color: #ffffff;
+    background-color: #ff6161;
     border-radius: 8px;
     padding: 2px;
     margin: 2px;
@@ -16,7 +16,7 @@ header > h2{
     font-size: 20pt;
 }
 nav{
-    background-color: #ffffff;
+    background-color: #ff6161;
     border-radius: 8px;
     padding: 2px;
     margin: 2px;
@@ -28,9 +28,9 @@ nav > button{
     width: 100px;
 }
 main{
-    background-color: #ffffff;
+    background-color: #ff6161;
     border-radius: 8px;
-    padding: 2px;
+    padding: 8px;
     margin: 2px;
 }
 main > button, .menuBox{
@@ -77,7 +77,7 @@ li{
     height: 50px;
 }
 footer{
-    background-color: #ffffff;
+    background-color: #ff6161;
     border-radius: 8px;
     padding: 2px;
     margin: 2px;
