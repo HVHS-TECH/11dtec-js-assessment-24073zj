@@ -36,5 +36,9 @@ function NextPage(){
     }
 }
 
+function ShowSection(_num){
+    let divArea = document.getElementById(`menuSection${_num}`);
+    if(divArea. == 0)
+}
 
 

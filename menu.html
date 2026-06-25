@@ -17,8 +17,8 @@
     <main>
         <h1>Menu</h1>
         <form id="menuForm">
-            <h2>Pizzas:</h2>
-            <div class="menuSection">
+            <button class="dropdown-button" onclick="ShowSection(0);"><h2>Pizzas:</h2></button>
+            <div class="menuSection" id="menuSection1">
                     <div class="menuBox" onclick="AddToCart('Pepperoni Pizza')">
                         <label>Pepperoni Pizza</label><br>
                         <img src='https://t3.ftcdn.net/jpg/10/43/04/38/360_F_1043043872_DhWtj6Jq2l4FjnCXIcPcH1QxSsV0AJWl.jpg'>
@@ -32,15 +32,15 @@
                     <img src='https://media.istockphoto.com/id/479293070/photo/pizza.jpg?s=612x612&w=0&k=20&c=6_FFHbieV8R1VPc7fehj5K6s3vlPt15xk6MeN6rSN_E='>
                 </div>
             </div>
-            <h2>Sides:</h2>
-            <div class="menuSection">
+            <button class="dropdown-button"><h2>Sides:</h2></button>
+            <div class="menuSection" id="menuSection2">
                 <div class="menuBox" onclick="AddToCart('Fries')">
                     <label>Fries</label><br>
                     <img src='https://cdn.britannica.com/34/206334-050-7637EB66/French-fries.jpg'>
                 </div>
             </div>
-            <h2>Drinks:</h2>
-            <div class="menuSection">
+            <button class="dropdown-button"><h2>Drinks:</h2></button>
+            <div class="menuSection" id="menuSection3">
                 <div class="menuBox" onclick="AddToCart('Coke')">
                     <label>Coke</label><br>
                     <img src='https://t4.ftcdn.net/jpg/03/02/06/91/360_F_302069193_28NB8ujDIqbyrrgfOW9RrFaB4S0QaWlS.jpg'>

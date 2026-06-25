@@ -34,25 +34,27 @@ main{
     margin: 2px;
 }
 main > button, .menuBox{
-    background-color: #EEEEEE;
+    background-color: #e62f2f;
     border-radius: 8px;
     padding: 5px;
 }
 main > button:hover, .menuBox:hover{
-    background-color: #e0e0e0;
+    background-color: #cc1d1d;
 }
 main > button:active, .menuBox:active{
-    background-color: #cacaca;
+    background-color: #aa1818;
 }
 .menuBox{
     width: 210px;
     text-align: center;
+    margin: 2px;
 }
 .menuBox > img{
     width: 200px;
     height: 200px;
     object-fit: cover;
     background-color: white;
+    border-radius: 8px;
 }
 .menuSection{
     display: flex;
@@ -104,4 +106,10 @@ footer{
     width: auto;
     height: 400px;
     object-fit: cover;
+}
+.dropdown-button{
+    height:80px;
+    padding: 0px;
+    width: 100%;
+    text-align: left;
 }
