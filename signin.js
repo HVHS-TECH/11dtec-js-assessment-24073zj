@@ -1,10 +1,12 @@
 const passwordElement = document.getElementById("passwordInput");
 
-const password = "abc123pizza";
+const password = "PizzaIsTheBest";
 
 var enteredpassword = "";
 
 function EnterPassword(){
     enteredpassword = passwordElement.value;
-    console.log(enteredpassword);
+    if(enteredpassword == password){
+        window.location.href = "backend.html";
+    }
 }
