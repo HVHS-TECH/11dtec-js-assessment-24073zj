@@ -79,7 +79,9 @@ footer{
 .home-section, .home-section2{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    border: 1px solid black;
+    border: 2px solid black;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
 }
 .home-section > p{
     grid-column: 2 / span 2;
