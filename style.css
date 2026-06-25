@@ -7,6 +7,7 @@ p, li > input, button{
 }
 header{
     background-color: #ffffff;
+    border-radius: 8px;
     padding: 2px;
     margin: 2px;
 }
@@ -16,21 +17,25 @@ header > h2{
 }
 nav{
     background-color: #ffffff;
+    border-radius: 8px;
     padding: 2px;
     margin: 2px;
 }
 nav > button{
     background-color: white;
+    border-radius: 8px;
     padding: 5px;
     width: 100px;
 }
 main{
     background-color: #ffffff;
+    border-radius: 8px;
     padding: 2px;
     margin: 2px;
 }
 main > button, .menuBox{
     background-color: #EEEEEE;
+    border-radius: 8px;
     padding: 5px;
 }
 main > button:hover, .menuBox:hover{
@@ -73,6 +78,7 @@ li{
 }
 footer{
     background-color: #ffffff;
+    border-radius: 8px;
     padding: 2px;
     margin: 2px;
 }
