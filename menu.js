@@ -38,12 +38,13 @@ function NextPage(){
 
 function ShowSection(_num){
     let divArea = document.getElementById(`menuSection${_num}`);
+    /*
     if(divArea.getBoundingClientRect().height <= 0){
         divArea.setAttribute("height", "100px");
     }
     else if(divArea.getBoundingClientRect().height > 0){
         divArea.setAttribute("height", "0px");
-    }
+    }*/
 }
 
 
