@@ -38,6 +38,7 @@ function NextPage(){
 
 function ShowSection(_num){
     let divArea = document.getElementById(`menuSection${_num}`);
+    divArea.setAttribute("background-color", "blue");
     /*
     if(divArea.getBoundingClientRect().height <= 0){
         divArea.setAttribute("height", "100px");
