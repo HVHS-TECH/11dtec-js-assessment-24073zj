@@ -36,16 +36,26 @@ function NextPage(){
     }
 }
 
-function ShowSection(_num){
-    let divArea = document.getElementById(`menuSection${_num}`);
-    divArea.setAttribute("background-color", "blue");
-    /*
-    if(divArea.getBoundingClientRect().height <= 0){
-        divArea.setAttribute("height", "100px");
+function ToggleFirstSection(){
+    let divArea = document.getElementById("menuSection1");
+    if(divArea.style.display == "flex"){
+        divArea.style.display = "none";
     }
-    else if(divArea.getBoundingClientRect().height > 0){
-        divArea.setAttribute("height", "0px");
-    }*/
+    else{
+        divArea.style.display = "flex";
+    }
+}
+
+function ToggleSection(_num, _this){
+    let divArea = document.getElementById(`menuSection${_num}`);
+    if(divArea.style.display == "flex"){
+        divArea.style.display = "none";
+        _this.style.borderRadius = "10px 10px 10px 10px";
+    }
+    else{
+        divArea.style.display = "flex";
+        _this.style.borderRadius = "10px 10px 0px 0px";
+    }
 }
 
 

@@ -1,12 +1,12 @@
 body{
     font-family: Verdana, sans-serif;
-    background-color: #b80b0b;
+    background-color: #d30d0d;
 }
 p, li > input, button{
     font-size: 15pt;
 }
 header{
-    background-color: #ff6161;
+    background-color: #e4e4e4;
     border-radius: 8px;
     padding: 2px;
     margin: 2px;
@@ -16,7 +16,7 @@ header > h2{
     font-size: 20pt;
 }
 nav{
-    background-color: #ff6161;
+    background-color: #e4e4e4;
     border-radius: 8px;
     padding: 2px;
     margin: 2px;
@@ -28,21 +28,21 @@ nav > button{
     width: 100px;
 }
 main{
-    background-color: #ff6161;
+    background-color: #e4e4e4;
     border-radius: 8px;
     padding: 8px;
     margin: 2px;
 }
 main > button, .menuBox{
-    background-color: #e62f2f;
+    background-color: #f73434;
     border-radius: 8px;
     padding: 5px;
 }
 main > button:hover, .menuBox:hover{
-    background-color: #cc1d1d;
+    background-color: #e02121;
 }
 main > button:active, .menuBox:active{
-    background-color: #aa1818;
+    background-color: #cc1e1e;
 }
 .menuBox{
     width: 210px;
@@ -55,9 +55,6 @@ main > button:active, .menuBox:active{
     object-fit: cover;
     background-color: white;
     border-radius: 8px;
-}
-.menuSection{
-    display: flex;
 }
 li{
     margin: 2px;
@@ -107,11 +104,19 @@ footer{
     height: 400px;
     object-fit: cover;
 }
+.menuSection{
+    display: flex;
+    /*border: 1px black solid;*/
+    border-radius: 0px 0px 10px 10px;
+    background-color: white;
+}
 .dropdown-button{
-    height:80px;
+    height: 80px;
     padding: 0px;
+    padding-left: 10px;
     width: 100%;
     text-align: left;
     background-color: #fa5151;
     border: 1px solid #FF6666;
+    border-radius: 10px 10px 0px 0px;
 }
