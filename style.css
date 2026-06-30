@@ -6,7 +6,7 @@ p, li > input, button{
     font-size: 15pt;
 }
 header{
-    background-color: #ffffff;
+    background-color: #f0f0f0;
     border-radius: 8px;
     padding: 2px;
     margin: 2px;
@@ -16,7 +16,7 @@ header > h2{
     font-size: 20pt;
 }
 nav{
-    background-color: #e4e4e4;
+    background-color: #f0f0f0;
     border-radius: 8px;
     padding: 2px;
     margin: 2px;
@@ -28,7 +28,7 @@ nav > button{
     width: 100px;
 }
 main{
-    background-color: #e4e4e4;
+    background-color: #ffffff;
     border-radius: 8px;
     padding: 8px;
     margin: 2px;
@@ -108,7 +108,7 @@ footer{
     display: flex;
     /*border: 1px black solid;*/
     border-radius: 0px 0px 10px 10px;
-    background-color: white;
+    background-color: rgb(197, 197, 197);
 }
 .dropdown-button{
     height: 80px;
