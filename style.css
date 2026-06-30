@@ -122,9 +122,11 @@ footer{
 }
 .dropdown-button > h2{
     display: flex;
+    flex-direction: row;
 }
 .dropdown-arrow{
     width: 20px; 
     display: flex;
     justify-content: center;
+    flex-direction: row;
 }
