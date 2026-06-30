@@ -120,3 +120,8 @@ footer{
     border: 1px solid #FF6666;
     border-radius: 10px 10px 0px 0px;
 }
+.dropdown-arrow{
+    width: 20px; 
+    display: inline;
+    text-align: right;
+}
