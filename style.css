@@ -128,4 +128,5 @@ footer{
     display: inline;
     
     transform: translateX(50px); 
+    position: absolute; left: 500px;
 }
