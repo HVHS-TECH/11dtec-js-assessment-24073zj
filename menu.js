@@ -36,16 +36,6 @@ function NextPage(){
     }
 }
 
-function ToggleFirstSection(){
-    let divArea = document.getElementById("menuSection1");
-    if(divArea.style.display == "flex"){
-        divArea.style.display = "none";
-    }
-    else{
-        divArea.style.display = "flex";
-    }
-}
-
 function ToggleSection(_num, _this){
     let divArea = document.getElementById(`menuSection${_num}`);
     if(divArea.style.display == "flex"){
@@ -57,5 +47,3 @@ function ToggleSection(_num, _this){
         _this.style.borderRadius = "10px 10px 0px 0px";
     }
 }
-
-
