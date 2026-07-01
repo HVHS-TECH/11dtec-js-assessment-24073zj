@@ -128,4 +128,10 @@ footer{
     display: inline; 
     position: absolute;
     left: 95%;
+
+    transition: transform 0.6s ease-in-out; 
+}
+
+.spin-180 {
+    transform: rotate(180deg);
 }
