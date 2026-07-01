@@ -126,5 +126,6 @@ footer{
 .dropdown-arrow{
     width: 25px; 
     display: inline;
-    margin-left: 90%;
+    
+    transform: translateX(50px); 
 }
