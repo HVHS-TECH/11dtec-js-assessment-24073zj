@@ -41,11 +41,11 @@ function ToggleSection(_num, _this){
     if(divArea.style.display == "flex"){
         divArea.style.display = "none";
         _this.style.borderRadius = "10px 10px 10px 10px";
-        _this.classList.toggle('spin-180');
+        _this.querySelector('img').classList.toggle('spin-object');
     }
     else{
         divArea.style.display = "flex";
         _this.style.borderRadius = "10px 10px 0px 0px";
-        _this.querySelector('img').classList.toggle('spin-180');
+        _this.querySelector('img').classList.toggle('spin-object');
     }
 }
