@@ -118,7 +118,7 @@ footer{
     text-align: left;
     background-color: #fa5151;
     border: 1px solid #FF6666;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 10px 10px 10px 10px;
 }
 .dropdown-button > h2{
     display: inline;
