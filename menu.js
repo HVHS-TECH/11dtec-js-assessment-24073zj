@@ -58,7 +58,8 @@ function ToggleSection(_num, _this){
     }
 }
 function RemoveItem(item){
-    cart[item].p
+    cart.splice(item, 1);
+    MenuShow();
 }
 
 MenuShow();
