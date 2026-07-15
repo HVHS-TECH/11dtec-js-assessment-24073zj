@@ -24,6 +24,7 @@ function AddToCart(_item){
 function MenuShow()
 {
     OUTPUT.innerHTML = "Your order:<br>";
+    OUTPUT.innerHTML += "<button>Clear order</button><br>";
     if(cart[0] == undefined){
         OUTPUT.innerHTML = "There is nothing in your cart";
         return 1;
