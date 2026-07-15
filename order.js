@@ -59,5 +59,8 @@ function OrderShow()
         RECEIPT.innerHTML += "Your change: $" + change + "<br>";
     }
 }
+function NextPage(){
+    
+}
 
 ShowCost();
