@@ -29,7 +29,7 @@ function MenuShow()
         return 1;
     }
     for(let i = 0; i < cart.length; i++){
-        OUTPUT.innerHTML += "<div>" + (i + 1) + ": " + cart[i];
+        OUTPUT.innerHTML += `<div style="display: inline-block;">` + (i + 1) + ": " + cart[i];
         OUTPUT.innerHTML += "<button>Remove</button>" + "</div><br>";
     }
     sessionStorage.setItem("cartData", JSON.stringify(cart));
