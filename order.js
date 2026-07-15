@@ -60,7 +60,8 @@ function OrderShow()
     }
 }
 function NextPage(){
-    
+    sessionStorage.setItem("cartData", JSON.stringify(cart));
+    window.location.href = "menu.html";
 }
 
 ShowCost();
