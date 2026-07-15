@@ -29,7 +29,8 @@ function MenuShow()
         return 1;
     }
     for(let i = 0; i < cart.length; i++){
-        OUTPUT.innerHTML += (i + 1) + ": " + cart[i] + "<br>";
+        OUTPUT.innerHTML += (i + 1) + ": " + cart[i];
+        OUTPUT.innerHTML += "" + "<br>";
     }
     sessionStorage.setItem("cartData", JSON.stringify(cart));
     return 0;
