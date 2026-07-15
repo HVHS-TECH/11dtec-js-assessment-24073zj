@@ -29,8 +29,8 @@ function MenuShow()
         return 1;
     }
     for(let i = 0; i < cart.length; i++){
-        OUTPUT.innerHTML += (i + 1) + ": " + cart[i];
-        OUTPUT.innerHTML += "" + "<br>";
+        OUTPUT.innerHTML += "<div>" + (i + 1) + ": " + cart[i];
+        OUTPUT.innerHTML += "<button>Remove</button>" + "</div><br>";
     }
     sessionStorage.setItem("cartData", JSON.stringify(cart));
     return 0;
