@@ -29,8 +29,9 @@ function MenuShow()
         return 1;
     }
     for(let i = 0; i < cart.length; i++){
-        OUTPUT.innerHTML += `<div style="display: inline-block;>` + (i + 1) + ": " + cart[i];
-        OUTPUT.innerHTML += "<button>Remove</button>" + "</div><br>";
+        OUTPUT.innerHTML += `<div class="cartItem">`
+        + (i + 1) + ": " + cart[i]
+        + ` <button style="font-size:12pt;" onclick="RemoveItem(${i})">Remove</button>` + "</div><br>";
     }
     sessionStorage.setItem("cartData", JSON.stringify(cart));
     return 0;
@@ -55,6 +56,9 @@ function ToggleSection(_num, _this){
         _this.style.borderRadius = "10px 10px 0px 0px";
         _this.querySelector('img').classList.toggle('spin-object');
     }
+}
+function RemoveItem(item){
+    cart[item].p
 }
 
 MenuShow();
