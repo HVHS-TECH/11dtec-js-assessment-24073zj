@@ -56,3 +56,4 @@ function ToggleSection(_num, _this){
     }
 }
 
+MenuShow();
