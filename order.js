@@ -59,7 +59,7 @@ function OrderShow()
         RECEIPT.innerHTML += "Your change: $" + change + "<br>";
     }
 }
-function NextPage(){
+function GoBack(){
     sessionStorage.setItem("cartData", JSON.stringify(cart));
     window.location.href = "menu.html";
 }
