@@ -4,7 +4,12 @@ const ORDER_FORM = document.getElementById("orderForm");
 const OUTPUT = document.getElementById("devOutput");
 
 var cart = [];
-if(JSON.parse(sessionStorage.getItem("cartData")))
+try{
+    cart = JSON.parse(sessionStorage.getItem("cartData"));
+}
+catch{
+    cart = [];
+}
 
 var user = {
     name: "",
@@ -50,3 +55,4 @@ function ToggleSection(_num, _this){
         _this.querySelector('img').classList.toggle('spin-object');
     }
 }
+
