@@ -98,6 +98,7 @@ footer{
 }
 .home-section2 > p{
     grid-column: 1 / span 2;
+    margin: 2px;
 }
 .home-section2 > img{
     width: auto;
