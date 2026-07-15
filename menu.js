@@ -4,6 +4,7 @@ const ORDER_FORM = document.getElementById("orderForm");
 const OUTPUT = document.getElementById("devOutput");
 
 var cart = [];
+if(JSON.parse(sessionStorage.getItem("cartData")))
 
 var user = {
     name: "",
