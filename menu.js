@@ -24,7 +24,7 @@ function AddToCart(_item){
 function MenuShow()
 {
     OUTPUT.innerHTML = "Your order:<br>";
-    OUTPUT.innerHTML += "<button>Clear order</button><br>";
+    OUTPUT.innerHTML += `<button onclick="ClearOrder()">Clear order</button><br>`;
     if(cart[0] == undefined){
         OUTPUT.innerHTML = "There is nothing in your cart";
         return 1;
@@ -60,6 +60,10 @@ function ToggleSection(_num, _this){
 }
 function RemoveItem(item){
     cart.splice(item, 1);
+    MenuShow();
+}
+function ClearOrder(){
+    cart = [];
     MenuShow();
 }
 
