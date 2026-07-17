@@ -4,11 +4,7 @@ const ORDER_FORM = document.getElementById("orderForm");
 const OUTPUT = document.getElementById("devOutput");
 
 var cart = [];
-try{
-    cart = JSON.parse(sessionStorage.getItem("cartData"));
-}catch{
-    console.log("a");
-}
+cart = JSON.parse(sessionStorage.getItem("cartData")) ? JSON.parse(sessionStorage.getItem("cartData")) : null;
 
 var user = {
     name: "",
