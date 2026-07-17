@@ -3,8 +3,7 @@ const ORDER_FORM = document.getElementById("orderForm");
 
 const OUTPUT = document.getElementById("devOutput");
 
-var cart = [];
-cart = JSON.parse(sessionStorage.getItem("cartData")) ? JSON.parse(sessionStorage.getItem("cartData")) : null;
+var cart = JSON.parse(sessionStorage.getItem("cartData")) ? JSON.parse(sessionStorage.getItem("cartData")) : [];
 
 var user = {
     name: "",
