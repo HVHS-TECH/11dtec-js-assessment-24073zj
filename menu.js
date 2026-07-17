@@ -8,7 +8,6 @@ try{
     cart = JSON.parse(sessionStorage.getItem("cartData"));
 }
 catch{
-    cart = [];
 }
 
 var user = {
