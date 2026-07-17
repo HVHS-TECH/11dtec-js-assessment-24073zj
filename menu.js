@@ -6,8 +6,8 @@ const OUTPUT = document.getElementById("devOutput");
 var cart = [];
 try{
     cart = JSON.parse(sessionStorage.getItem("cartData"));
-}
-catch{
+}catch{
+    console.log("a");
 }
 
 var user = {
