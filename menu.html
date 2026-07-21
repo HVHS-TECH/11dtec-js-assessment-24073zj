@@ -15,20 +15,33 @@
     </nav>
     <main>
         <h1>Ordering | Menu</h1>
+        <!--
+            name: "Pepperoni Pizza", price: 7
+            name: "Cheese Pizza", price: 6
+            name: "Hawaiian Pizza", price: 7
+            name: "Fries", price: 3
+            name: "Garlic Bread", price: 4
+            name: "Coke", price: 3.5
+            name: "Sprite", price: 3.5
+            name: "Fanta", price: 3.5
+        -->
         <form id="menuForm" onsubmit="return false;">
             <button class="dropdown-button" onclick="ToggleSection(1, this);"><h2>Pizzas:</h2><img class="dropdown-arrow" src="arrow.png"></button>
             <div class="menuSection" id="menuSection1">
-                    <div class="menuBox" onclick="AddToCart('Pepperoni Pizza')">
-                        <label>Pepperoni Pizza</label><br>
-                        <img src='https://t3.ftcdn.net/jpg/10/43/04/38/360_F_1043043872_DhWtj6Jq2l4FjnCXIcPcH1QxSsV0AJWl.jpg'>
-                    </div>
+                <div class="menuBox" onclick="AddToCart('Pepperoni Pizza')">
+                    <label>Pepperoni Pizza</label><br>
+                    <img src='https://t3.ftcdn.net/jpg/10/43/04/38/360_F_1043043872_DhWtj6Jq2l4FjnCXIcPcH1QxSsV0AJWl.jpg'>
+                    <label>$7</label>
+                </div>
                 <div class="menuBox" onclick="AddToCart('Cheese Pizza')">
                     <label>Cheese Pizza</label><br>
                     <img src='https://png.pngtree.com/png-clipart/20240725/original/pngtree-delicious-cheese-pizza-png-image_15632112.png'>
+                    <label>$6</label>
                 </div>
                 <div class="menuBox" onclick="AddToCart('Hawaiian Pizza')">
                     <label>Hawaiian Pizza</label><br>
                     <img src='https://media.istockphoto.com/id/479293070/photo/pizza.jpg?s=612x612&w=0&k=20&c=6_FFHbieV8R1VPc7fehj5K6s3vlPt15xk6MeN6rSN_E='>
+                    <label>$7</label>
                 </div>
             </div>
             <button class="dropdown-button" onclick="ToggleSection(2, this);"><h2>Sides:</h2><img class="dropdown-arrow" src="arrow.png"></button>
@@ -36,6 +49,12 @@
                 <div class="menuBox" onclick="AddToCart('Fries')">
                     <label>Fries</label><br>
                     <img src='https://cdn.britannica.com/34/206334-050-7637EB66/French-fries.jpg'>
+                    <label>$3</label>
+                </div>
+                <div class="menuBox" onclick="AddToCart('Garlic Bread')">
+                    <label>Garlic Bread</label><br>
+                    <img src='https://png.pngtree.com/png-clipart/20250221/original/pngtree-garlic-bread-white-background-png-image_20491246.png'>
+                    <label>$4</label>
                 </div>
             </div>
             <button class="dropdown-button" onclick="ToggleSection(3, this);"><h2>Drinks:</h2><img class="dropdown-arrow" src="arrow.png"></button>
@@ -43,14 +62,17 @@
                 <div class="menuBox" onclick="AddToCart('Coke')">
                     <label>Coke</label><br>
                     <img src='https://t4.ftcdn.net/jpg/03/02/06/91/360_F_302069193_28NB8ujDIqbyrrgfOW9RrFaB4S0QaWlS.jpg'>
+                    <label>$3.50</label>
                 </div>
                 <div class="menuBox" onclick="AddToCart('Sprite')">
                     <label>Sprite</label><br>
                     <img src='https://content.wendys.co.nz/f/330482/1000x1000/2036b18fdd/sprite-lge-product-1000.png/m/400x0/filters:quality(90)'>
+                    <label>$3.50</label>
                 </div>
                 <div class="menuBox" onclick="AddToCart('Fanta')">
                     <label>Fanta</label><br>
                     <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLvRv5qjVc2-Z7KEGr14W0fBsC8VFDQFHYbg&s'>
+                    <label>$3.50</label>
                 </div>
             </div>
         </form>

@@ -23,10 +23,11 @@ function AddToCart(_item){
 }
 function MenuShow()
 {
-    OUTPUT.innerHTML = "Your order:<br>";
+    OUTPUT.innerHTML = "";
+    OUTPUT.innerHTML += "Your order:<br>";
     OUTPUT.innerHTML += `<button onclick="ClearOrder()">Clear order</button><br>`;
     if(cart[0] == undefined){
-        OUTPUT.innerHTML = "There is nothing in your cart";
+        OUTPUT.innerHTML = "There is nothing in your cart yet";
         return 1;
     }
     for(let i = 0; i < cart.length; i++){
@@ -63,8 +64,11 @@ function RemoveItem(item){
     MenuShow();
 }
 function ClearOrder(){
-    cart = [];
-    MenuShow();
+    let result = confirm("Are you sure?");
+    if(result){
+        cart = [];
+        MenuShow();
+    }
 }
 
 MenuShow();

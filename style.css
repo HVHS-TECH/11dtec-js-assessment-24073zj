@@ -85,16 +85,19 @@ footer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     border: 2px solid black;
-    border-top-width: 1px;
+    border-top-width: 2px;
     border-bottom-width: 1px;
+    border-radius: 6px;
 }
 .home-section > p{
     grid-column: 2 / span 2;
+    margin: 2px;
 }
 .home-section > img{
-    width: auto;
+    max-width: 500px;
     height: 400px;
     object-fit: cover;
+    border-radius: 4px;
 }
 .home-section2 > p{
     grid-column: 1 / span 2;
@@ -104,6 +107,7 @@ footer{
     width: auto;
     height: 400px;
     object-fit: cover;
+    border-radius: 4px;
 }
 .menuSection{
     display: none; /* flex */

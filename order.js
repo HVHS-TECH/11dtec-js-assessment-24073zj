@@ -11,6 +11,7 @@ const menuItems = [
     { name: "Cheese Pizza", price: 6 },
     { name: "Hawaiian Pizza", price: 7 },
     { name: "Fries", price: 3 },
+    { name: "Garlic Bread", price: 4 },
     { name: "Coke", price: 3.5 },
     { name: "Sprite", price: 3.5 },
     { name: "Fanta", price: 3.5 }
@@ -57,6 +58,12 @@ function OrderShow()
         RECEIPT.innerHTML += "<br>Total cost: $" + orderPrice + "<br><br>";
         RECEIPT.innerHTML += "Money given: $" + usermoney + "<br><br>";
         RECEIPT.innerHTML += "Your change: $" + change + "<br>";
+    }
+    else if(isNaN(usermoney)){
+        alert("You have not entered the money amount correctly.\nPlease write the amount as only a number e.g. '5'.");
+    }
+    else{
+        alert("You have not entered enough money to pay for your order.");
     }
 }
 function GoBack(){
