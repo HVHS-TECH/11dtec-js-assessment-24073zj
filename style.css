@@ -92,16 +92,19 @@ footer{
 .home-section > p{
     grid-column: 2 / span 2;
     margin: 2px;
+    text-align: center;
+}
+.home-section2 > p{
+    grid-column: 1 / span 2;
+    margin: 2px;
+    text-align: center;
+    
 }
 .home-section > img{
     max-width: 500px;
     height: 400px;
     object-fit: cover;
     border-radius: 4px;
-}
-.home-section2 > p{
-    grid-column: 1 / span 2;
-    margin: 2px;
 }
 .home-section2 > img{
     width: auto;
