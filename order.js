@@ -49,9 +49,10 @@ function OrderShow()
         RECEIPT.innerHTML = ""
         RECEIPT.innerHTML += "Name: " + NAME_INPUT.value + "<br><br>";
         RECEIPT.innerHTML += "Your items: " + "<br>";
-        for (const item of cart)
+        for (var item of cart)
         {
-            RECEIPT.innerHTML += item + "<br>";
+            let thisItem = menuItems.find(i => i.name === item);
+            RECEIPT.innerHTML += item + " $" + thisItem["price"] + "<br>";
         }
 
         let change = usermoney - orderPrice;
