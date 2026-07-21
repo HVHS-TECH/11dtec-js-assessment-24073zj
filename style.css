@@ -98,7 +98,7 @@ footer{
     grid-column: 1 / span 2;
     margin: 2px;
     text-align: center;
-    
+    justify-self: center;
 }
 .home-section > img{
     max-width: 500px;
