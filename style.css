@@ -91,13 +91,13 @@ footer{
 }
 .home-section > p{
     grid-column: 2 / span 2;
-    margin: 2px;
+    margin: 4px;
     text-align: center;
     align-content: center;
 }
 .home-section2 > p{
     grid-column: 1 / span 2;
-    margin: 2px;
+    margin: 4px;
     text-align: center;
     align-content: center;
 }
