@@ -77,16 +77,21 @@ function ClearOrder(){
     }
 }
 function ShowAlert(_x, _y, _message, _mode){
+    ALERT_BOX.style.display = "block";
     ALERT_BOX.style.left = `${_x}px`;
     ALERT_BOX.style.top = `${_y}px`;
-    ALERT_BOX.
+    ALERT_BOX.querySelector('p').innerHTML = _message;
     if(mode == 0){
-        
+        ALERT_OKAY_BUTTON.style.display = "block";
+        ALERT_YES_BUTTON.style.display = "none";
+        ALERT_NO_BUTTON.style.display = "none";
     }
     else if( mode == 1){
-
+        ALERT_OKAY_BUTTON.style.display = "none";
+        ALERT_YES_BUTTON.style.display = "block";
+        ALERT_NO_BUTTON.style.display = "block";
     }
-
 }
 
 MenuShow();
+ShowAlert(100, 200, "hello world", 0);
