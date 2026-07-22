@@ -81,12 +81,12 @@ function ShowAlert(_x, _y, _message, _mode){
     ALERT_BOX.style.left = `${_x}px`;
     ALERT_BOX.style.top = `${_y}px`;
     ALERT_BOX.querySelector('p').innerHTML = _message;
-    if(mode == 0){
+    if(_mode == 0){
         ALERT_OKAY_BUTTON.style.display = "block";
         ALERT_YES_BUTTON.style.display = "none";
         ALERT_NO_BUTTON.style.display = "none";
     }
-    else if( mode == 1){
+    else if(_mode == 1){
         ALERT_OKAY_BUTTON.style.display = "none";
         ALERT_YES_BUTTON.style.display = "block";
         ALERT_NO_BUTTON.style.display = "block";
@@ -103,5 +103,6 @@ function HideAlert(){
 }
 
 MenuShow();
+HideAlert();
 ShowAlert(100, 200, "hello world", 0);
-setTimeout(HideAlert, 1000);
+//setTimeout(HideAlert, 1000);
