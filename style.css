@@ -139,9 +139,10 @@ footer{
     position: absolute;
     left: 95%;
 
+    /* makes any rotations applied smooth */
     transition: transform 0.3s linear; 
 }
-
+/* this css class gets added and removed using javascript to spin the arrow */
 .spin-object {
     transform: rotate(-180deg);
 }
