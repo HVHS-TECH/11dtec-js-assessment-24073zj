@@ -112,4 +112,4 @@ function HideAlert(){
 
 MenuShow();
 HideAlert();
-ShowAlert(100, 200, "hello world", 1);
+//ShowAlert(100, 200, "hello world", 1);
