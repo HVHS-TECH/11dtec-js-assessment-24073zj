@@ -17,6 +17,12 @@ var user = {
     moneyEntered: 0
 };
 
+// alert box
+const ALERT_BOX = document.getElementById("alertbox");
+const ALERT_OKAY_BUTTON = document.getElementById("alert-okay-button");
+const ALERT_YES_BUTTON = document.getElementById("alert-yes-button");
+const ALERT_NO_BUTTON = document.getElementById("alert-no-button");
+
 function AddToCart(_item){
     cart.push(_item);
     MenuShow();
@@ -71,7 +77,9 @@ function ClearOrder(){
     }
 }
 function ShowAlert(_x, _y, _message, _mode){
-    
+    ALERT_BOX.style.left = `${_x}px`;
+    ALERT_BOX.style.top = `${_y}px`;
+    ALERT_BOX.
     if(mode == 0){
         
     }
