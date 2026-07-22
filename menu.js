@@ -70,5 +70,15 @@ function ClearOrder(){
         MenuShow();
     }
 }
+function ShowAlert(_x, _y, _message, _mode){
+    
+    if(mode == 0){
+        
+    }
+    else if( mode == 1){
+
+    }
+
+}
 
 MenuShow();
