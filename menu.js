@@ -92,6 +92,16 @@ function ShowAlert(_x, _y, _message, _mode){
         ALERT_NO_BUTTON.style.display = "block";
     }
 }
+function HideAlert(){
+    ALERT_BOX.style.display = "none";
+    ALERT_BOX.style.left = `0px`;
+    ALERT_BOX.style.top = `0px`;
+    ALERT_BOX.querySelector('p').innerHTML = "";
+    ALERT_YES_BUTTON.style.display = "none";
+    ALERT_NO_BUTTON.style.display = "none";
+    ALERT_OKAY_BUTTON.style.display = "none";
+}
 
 MenuShow();
 ShowAlert(100, 200, "hello world", 0);
+setTimeout(HideAlert, 1000);
