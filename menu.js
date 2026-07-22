@@ -82,16 +82,20 @@ function ShowAlert(_x, _y, _message, _mode){
     ALERT_BOX.style.top = `${_y}px`;
     ALERT_BOX.querySelector('p').innerHTML = _message;
     if(_mode == 0){
-        ALERT_OKAY_BUTTON.style.display = "block";
+        ALERT_OKAY_BUTTON.style.display = "none";
         ALERT_YES_BUTTON.style.display = "none";
         ALERT_NO_BUTTON.style.display = "none";
     }
     else if(_mode == 1){
+        ALERT_OKAY_BUTTON.style.display = "block";
+        ALERT_YES_BUTTON.style.display = "none";
+        ALERT_NO_BUTTON.style.display = "none";
+    }
+    else if (_mode == 2){
         ALERT_OKAY_BUTTON.style.display = "none";
         ALERT_YES_BUTTON.style.display = "block";
         ALERT_NO_BUTTON.style.display = "block";
     }
-    else if (_mode == 2)
 }
 function HideAlert(){
     ALERT_BOX.style.display = "none";
@@ -105,5 +109,4 @@ function HideAlert(){
 
 MenuShow();
 HideAlert();
-ShowAlert(100, 200, "hello world", 0);
-//setTimeout(HideAlert, 1000);
+ShowAlert(100, 200, "hello world", 1);
