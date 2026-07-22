@@ -47,7 +47,10 @@ function MenuShow()
 
 function NextPage(){
     let returnValue = MenuShow();
-    if(returnValue != 1){
+    if(returnValue == 1){
+        ShowAlert(100, 200, "You have no items in your cart.<br> Add an item to proceed.", 1);
+    }
+    else{
         window.location.href="order.html";
     }
 }

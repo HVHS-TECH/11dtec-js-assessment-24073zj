@@ -160,7 +160,7 @@ footer{
 }
 #alertbox{
     background-color: #e9e9e9;
-    width: 200px;
+    width: 400px;
     position: absolute;
     border: solid black 2px;
     display: none;
