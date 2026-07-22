@@ -91,6 +91,7 @@ function ShowAlert(_x, _y, _message, _mode){
         ALERT_YES_BUTTON.style.display = "block";
         ALERT_NO_BUTTON.style.display = "block";
     }
+    else if (_mode == 2)
 }
 function HideAlert(){
     ALERT_BOX.style.display = "none";
