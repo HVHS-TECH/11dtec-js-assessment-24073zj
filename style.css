@@ -163,6 +163,7 @@ footer{
     min-width: 200px;
     position: absolute;
     border: solid black 2px;
+    border-radius: 4px;
     display: none;
     padding: 2px;
 }

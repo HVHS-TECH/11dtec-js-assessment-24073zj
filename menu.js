@@ -3,6 +3,7 @@ const ORDER_FORM = document.getElementById("orderForm");
 
 const OUTPUT = document.getElementById("devOutput");
 
+// either sync cart data or set up as blank
 var cart;
 if( JSON.parse(sessionStorage.getItem("cartData")) ){
     cart = JSON.parse(sessionStorage.getItem("cartData"));
@@ -11,24 +12,28 @@ else{
     cart = [];
 };
 
-var user = {
-    name: "",
-    orderPrice: 0,
-    moneyEntered: 0
-};
-
-// alert box
+// alert box stuff
 const ALERT_BOX = document.getElementById("alertbox");
 const ALERT_OKAY_BUTTON = document.getElementById("alert-okay-button");
 const ALERT_YES_BUTTON = document.getElementById("alert-yes-button");
 const ALERT_NO_BUTTON = document.getElementById("alert-no-button");
-
 var alertResult = false;
 
-function AddToCart(_item){
-    cart.push(_item);
-    MenuShow();
+// when the dropdowns are clicked it shows the items
+function ToggleSection(_num, _this){
+    let divArea = document.getElementById(`menuSection${_num}`);
+    if(divArea.style.display == "flex"){
+        divArea.style.display = "none";
+        _this.style.borderRadius = "10px 10px 10px 10px";
+        _this.querySelector('img').classList.toggle('spin-object');
+    }
+    else{
+        divArea.style.display = "flex";
+        _this.style.borderRadius = "10px 10px 0px 0px";
+        _this.querySelector('img').classList.toggle('spin-object');
+    }
 }
+
 function MenuShow()
 {
     OUTPUT.innerHTML = "";
@@ -47,6 +52,21 @@ function MenuShow()
     return 0;
 }
 
+// Input actions
+function AddToCart(_item){
+    cart.push(_item);
+    MenuShow();
+}
+function RemoveItem(item){
+    cart.splice(item, 1);
+    MenuShow();
+}
+function ClearOrder(){
+    let button = document.getElementById("clearButton");
+    let ypos = button.getBoundingClientRect().top + document.documentElement.scrollTop;
+    ShowAlert(135, ypos - 70, "Are you sure?", 2);
+}
+
 function NextPage(){
     let button = document.getElementById("doneButton");
     // get position reltive to document
@@ -60,28 +80,7 @@ function NextPage(){
     }
 }
 
-function ToggleSection(_num, _this){
-    let divArea = document.getElementById(`menuSection${_num}`);
-    if(divArea.style.display == "flex"){
-        divArea.style.display = "none";
-        _this.style.borderRadius = "10px 10px 10px 10px";
-        _this.querySelector('img').classList.toggle('spin-object');
-    }
-    else{
-        divArea.style.display = "flex";
-        _this.style.borderRadius = "10px 10px 0px 0px";
-        _this.querySelector('img').classList.toggle('spin-object');
-    }
-}
-function RemoveItem(item){
-    cart.splice(item, 1);
-    MenuShow();
-}
-function ClearOrder(){
-    let button = document.getElementById("clearButton");
-    let ypos = button.getBoundingClientRect().top + document.documentElement.scrollTop;
-    ShowAlert(135, ypos - 70, "Are you sure?", 2);
-}
+// alert functions
 function ShowAlert(_x, _y, _message, _mode){
     ALERT_BOX.style.display = "block";
     ALERT_BOX.style.left = `${_x}px`;
@@ -121,6 +120,7 @@ function HideAlert(_result){
     }
 }
 
+// on page load
 MenuShow();
 HideAlert();
 //ShowAlert(100, 200, "hello world", 1);

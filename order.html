@@ -5,6 +5,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body style="font-family: sans-serif;">
+    <div id="alertbox">
+        <p>something happened</p>
+        <button id="alert-okay-button" onclick="HideAlert(true)">Okay</button>
+        <button id="alert-yes-button" onclick="HideAlert(true)">Yes</button>
+        <button id="alert-no-button" onclick="HideAlert(false)">No</button>
+    </div>
     <header>
         <h2>Zac's Pizza Restaurant</h2>
     </header>
@@ -27,7 +33,7 @@
             <br>
             <label>How much money do you want to input?</label>
             <br>
-            <input id="moneyInput" type="text">
+            $<input id="moneyInput" type="text">
             <button  onclick="AutoFill();">Auto</button>
         </form>
         <br>
@@ -35,11 +41,12 @@
         <br>
         <br>
         <div id="receipt">
+            <!--
             name: a<br>
             items: b<br>
             totalcost: c<br>
             moneygiven: d<br>
-            change: e<br>
+            change: e<br>-->
         </div>
     </main>
     <footer>Not an actual restaurant. Copyright 2026. etc</footer>
