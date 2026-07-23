@@ -58,8 +58,9 @@ function AutoFill(){
 // show the reciept or alert the user of a mistake
 function OrderShow()
 {
+    var username = NAME_INPUT.value;
     var usermoney = Number(MONEY_INPUT.value);
-    if(isNaN(Number(username))){// if username isnt a a number
+    if(!/\d/.test(username)){ // if username doesnt contain number
         if(usermoney >= orderPrice){
             RECEIPT.hidden = false;
             RECEIPT.innerHTML = ""
