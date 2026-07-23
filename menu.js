@@ -81,10 +81,6 @@ function ClearOrder(){
     let button = document.getElementById("clearButton");
     let ypos = button.getBoundingClientRect().top + document.documentElement.scrollTop;
     ShowAlert(135, ypos - 70, "Are you sure?", 2);
-    if(result){
-        cart = [];
-        MenuShow();
-    }
 }
 function ShowAlert(_x, _y, _message, _mode){
     ALERT_BOX.style.display = "block";
@@ -117,6 +113,8 @@ function HideAlert(_result){
     ALERT_OKAY_BUTTON.style.display = "none";
     if(_result){
         result = true;
+        cart = [];
+        MenuShow();
     }
     else{
         result = false;
