@@ -80,7 +80,7 @@ function RemoveItem(item){
 function ClearOrder(){
     let button = document.getElementById("clearButton");
     let ypos = button.getBoundingClientRect().top + document.documentElement.scrollTop;
-    let result = ShowAlert(135, ypos - 70, "Are you sure?", 2);
+    ShowAlert(135, ypos - 70, "Are you sure?", 2);
     if(result){
         cart = [];
         MenuShow();
@@ -107,7 +107,7 @@ function ShowAlert(_x, _y, _message, _mode){
         ALERT_NO_BUTTON.style.display = "inline";
     }
 }
-function HideAlert(){
+function HideAlert(_result){
     ALERT_BOX.style.display = "none";
     ALERT_BOX.style.left = `0px`;
     ALERT_BOX.style.top = `0px`;
@@ -115,6 +115,12 @@ function HideAlert(){
     ALERT_YES_BUTTON.style.display = "none";
     ALERT_NO_BUTTON.style.display = "none";
     ALERT_OKAY_BUTTON.style.display = "none";
+    if(_result){
+        result = true;
+    }
+    else{
+        result = false;
+    }
 }
 
 MenuShow();
