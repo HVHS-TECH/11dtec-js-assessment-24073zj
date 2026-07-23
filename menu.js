@@ -23,6 +23,8 @@ const ALERT_OKAY_BUTTON = document.getElementById("alert-okay-button");
 const ALERT_YES_BUTTON = document.getElementById("alert-yes-button");
 const ALERT_NO_BUTTON = document.getElementById("alert-no-button");
 
+var alertResult = false;
+
 function AddToCart(_item){
     cart.push(_item);
     MenuShow();
