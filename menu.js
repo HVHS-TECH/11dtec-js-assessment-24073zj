@@ -45,11 +45,11 @@ function MenuShow()
     return 0;
 }
 
-function NextPage(_button){
+function NextPage(){
+    let button = document.getElementById("doneButton");
     let returnValue = MenuShow();
     if(returnValue == 1){
-        console.log(_button.style.top);
-        ShowAlert(_button.style.top, _button.style.left + 100, "You have no items in your cart.<br> Add an item to proceed.", 1);
+        ShowAlert(button.style.top, button.style.left + 100, "You have no items in your cart.<br> Add an item to proceed.", 1);
     }
     else{
         window.location.href="order.html";
