@@ -51,7 +51,7 @@ function NextPage(){
     let ypos = button.getBoundingClientRect().top + document.documentElement.scrollTop;
     let returnValue = MenuShow();
     if(returnValue == 1){
-        ShowAlert(225, ypos - 30, "You have no items in your cart.<br> Add an item to proceed.", 1);
+        ShowAlert(225, ypos - 30, "You have no items in your cart yet.<br> Add an item to proceed.", 1);
     }
     else{
         window.location.href="order.html";
@@ -76,7 +76,9 @@ function RemoveItem(item){
     MenuShow();
 }
 function ClearOrder(){
-    let result = confirm("Are you sure?");
+    let button = document.getElementById("doneButton");
+    let ypos = button.getBoundingClientRect().top + document.documentElement.scrollTop;
+    let result = ShowAlert(300, 100, "Are you sure?", 2);
     if(result){
         cart = [];
         MenuShow();
@@ -99,8 +101,8 @@ function ShowAlert(_x, _y, _message, _mode){
     }
     else if (_mode == 2){
         ALERT_OKAY_BUTTON.style.display = "none";
-        ALERT_YES_BUTTON.style.display = "block";
-        ALERT_NO_BUTTON.style.display = "block";
+        ALERT_YES_BUTTON.style.display = "inline";
+        ALERT_NO_BUTTON.style.display = "inline";
     }
 }
 function HideAlert(){
