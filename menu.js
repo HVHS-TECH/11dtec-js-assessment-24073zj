@@ -31,7 +31,7 @@ function MenuShow()
 {
     OUTPUT.innerHTML = "";
     OUTPUT.innerHTML += "Your order:<br>";
-    OUTPUT.innerHTML += `<button onclick="ClearOrder()">Clear order</button><br>`;
+    OUTPUT.innerHTML += `<button onclick="ClearOrder()" id="clearButton">Clear order</button><br>`;
     if(cart[0] == undefined){
         OUTPUT.innerHTML = "There is nothing in your cart yet";
         return 1;
@@ -76,9 +76,9 @@ function RemoveItem(item){
     MenuShow();
 }
 function ClearOrder(){
-    let button = document.getElementById("doneButton");
+    let button = document.getElementById("clearButton");
     let ypos = button.getBoundingClientRect().top + document.documentElement.scrollTop;
-    let result = ShowAlert(300, 100, "Are you sure?", 2);
+    let result = ShowAlert(135, ypos - 70, "Are you sure?", 2);
     if(result){
         cart = [];
         MenuShow();
